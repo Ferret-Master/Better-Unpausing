@@ -5,11 +5,11 @@
     "description": "Correctly states actual reconnect time and only allows host unpausing if someone is dc'd",
     "author": "Ferretmaster",
     "version": "1.0",
-    "build": "115050",
-    "date": "2021-01-21",
+    "build": "116400",
+    "date": "2023-01-14",
     "signature": "not yet implemented",
-    "icon": "https://github.com/Ferret-Master/Visible-Spawns/blob/Release/icon.png?raw=true",
-    "forum": "https://forums.planetaryannihilation.com/threads/rel-server-visible-spawns.73513/",
+    "icon": "https://github.com/Ferret-Master/Better-Unpausing/blob/main/cmm_icon.png?raw=true",
+    "forum": "https://steamcommunity.com/app/386070/discussions/0/5400412499750623890/",
     "priority": 100,
     
     "scenes": {
@@ -28,8 +28,5 @@
         "ui","titans", "in-game","server"
         
     ]
-   
-
-   
    
 }
