@@ -20,7 +20,7 @@ handlers.checkForDisconnect = function(){//ran on any chat message
         }
         else{connectedPlayers.push(i)}
     }
-    if(connectedPlayers[0] == model.armyIndex() && disconnectedPlayer == true && pauseInfoMessageSent == false){model.send_message("chat_message", {message: "Someone has disconnected, only the host can unpause unless 3 mins have past, 1 minute pause buffer if re-paused"}); pauseInfoMessageSent = true}
+    if(connectedPlayers[0] == model.armyIndex() && disconnectedPlayer == true && pauseInfoMessageSent == false && model.paused() == true){model.send_message("chat_message", {message: "Someone has disconnected, only the host can unpause unless 3 mins have past, 1 minute pause buffer if re-paused"}); pauseInfoMessageSent = true}
     playerDisconnected(disconnectedPlayer)
 }
 
