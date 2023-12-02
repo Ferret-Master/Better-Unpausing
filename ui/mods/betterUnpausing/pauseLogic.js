@@ -56,7 +56,7 @@ handlers.trueReconnect = function(playerName){
     for(var i = 0; i< disconnectedPlayers.length;i++){
         if(disconnectedPlayers[i] == playerName){
           disconnectedPlayers.splice(i,1);
-          //model.send_message("chat_message", {message: " "+playerName +" has fully reconnected"})
+          if(connectedPlayers[0] == model.armyIndex()){model.send_message("chat_message", {message: " "+playerName +" has fully reconnected"})}
           if(disconnectedPlayers.length < 1){
              playerDisconnected(false);
           }
