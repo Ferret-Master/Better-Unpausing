@@ -25,13 +25,13 @@ handlers.checkForDisconnect = function(){//ran on any chat message
 }
 
 model.menuResumeGame = function(){
-    if((playerDisconnected() || disconnectedPlayers.length > 0) && !model.allowedToUnpause()){model.closeMenu();return}
+    //if((playerDisconnected() || disconnectedPlayers.length > 0) && !model.allowedToUnpause()){model.closeMenu();return}
     model.playSim();
     model.closeMenu();
 }
 
 handlers["game_paused.resume"] = function(){
-    if((playerDisconnected() || disconnectedPlayers.length > 0) && !model.allowedToUnpause()){model.closeMenu();return}
+   // if((playerDisconnected() || disconnectedPlayers.length > 0) && !model.allowedToUnpause()){model.closeMenu();return}
     model.playSim();
 }
 
